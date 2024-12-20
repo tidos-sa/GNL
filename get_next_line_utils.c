@@ -1,3 +1,4 @@
+
 #include "get_next_line_utils.h"
 #include <stdlib.h>
 
@@ -6,7 +7,7 @@ size_t	ft_strlen(const char	*s)
 	size_t	i;
 
 	i = 0;
-	while (s[i])
+	while (s[i] && s[i] != '\n')
 		i++;
 	return (i);
 }
