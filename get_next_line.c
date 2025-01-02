@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mide-lim <mide-lim@student.42.rio>         +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/15 17:37:12 by mide-lim          #+#    #+#             */
-/*   Updated: 2024/12/22 16:31:00 by mide-lim         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "get_next_line.h"
 
 static char	*extract_line(char *line)
@@ -94,7 +82,7 @@ char	*get_next_line(int fd)
 	return (line);
 }
 
-/*
+
 // --- Main para testes --- //
 #include <fcntl.h> // Para open()
 #include <stdio.h> // Para printf()
@@ -124,4 +112,3 @@ int	main(void)
 	close(fd);
 	return (0);
 }
-*/
