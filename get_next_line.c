@@ -82,7 +82,6 @@ char	*get_next_line(int fd)
 	return (line);
 }
 
-
 // --- Main para testes --- //
 #include <fcntl.h> // Para open()
 #include <stdio.h> // Para printf()
