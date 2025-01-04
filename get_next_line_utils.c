@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tidos-sa <tidos-sa@student.42.rio>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/03 21:32:34 by tidos-sa          #+#    #+#             */
+/*   Updated: 2025/01/03 21:32:36 by tidos-sa         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "get_next_line.h"
 
 size_t	ft_strlen(const char *s)
@@ -12,9 +24,9 @@ size_t	ft_strlen(const char *s)
 
 char	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	char	*d;
 	const char	*s;
 	size_t		i;
+	char		*d;
 
 	d = (char *)dest;
 	s = (const char *)src;
@@ -62,11 +74,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char		*substring;
 	size_t	len_s;
 	size_t	len_substring;
+	char	*substring;
 
-	if(!s)
+	if (!s)
 		return (NULL);
 	len_s = ft_strlen(s);
 	len_substring = len_s - start;
